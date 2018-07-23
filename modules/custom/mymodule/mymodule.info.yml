@@ -1,0 +1,6 @@
+name: my Module
+type: module
+description: 'A simple module.'
+# version: VERSION
+core: 8.x
+package : Custom

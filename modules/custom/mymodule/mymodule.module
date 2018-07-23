@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Main hooks for MyModule module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mymodule_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.mymodule':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Lorem ipsum. For more information, see the online <a href=":url">documentation</a>', array(
+          ':url' => 'http://www.wdtutorials.com',
+        )) . '</p>';
+      return $output;
+  }
+}

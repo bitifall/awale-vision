@@ -1,0 +1,24 @@
+global-styling:
+  version: VERSION
+  js: 
+    js/popper.min.js: {}
+    js/bootstrap.min.js: {}
+    js/global.js: {}
+  css:
+    component:
+      css/bootstrap.css: {}
+      css/custom.css: {}
+      css/svg.css: {}
+      css/carousel.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+bootstrapSlideshow:
+  css:
+    theme:
+      css/bootstrap.css: {}
+form:
+  version: VERSION
+  css:
+    component:
+      css/form.css: {}
