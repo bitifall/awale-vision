@@ -23,47 +23,78 @@ body{
 
 h1,h2,h3,h4,h5,h6,p{letter-spacing: 1.5px;}
 
-a{letter-spacing: 1px;}
+a{letter-spacing: .6px;}
 
 a:hover{
   color:#d53302;
   text-decoration: none;
 }
 
- .navbar-nav .nav-link
- {
- 	color:#fff;
- }
 
  small{
   color:#ddd;
  }
+
 .green-icon{
   color:#29DF00 !important;
 }
 
+.navbar-brand,.navbar {padding:0;}
 
- .navbar-nav .nav-link{
- 	font-weight: 700;
- 	color:#b4b491;
- 	text-transform: uppercase;
- 	transition: all .2s ease-in-out;
+/*** navbar**/
+
+.navbar ul li{
+      background: url(../images/nav-bg.png) no-repeat scroll right center;
+}
+.navbar ul > li:last-child {
+    background: none;
+}
+
+.navbar ul li a{
+
+ /*	color:#b4b491; */
+
+     color: #000;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    font-size: 15px;
+    padding:0 20px !important;
+   height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    font-weight: 600;
+    
  }
 
- .navbar-nav .nav-link:hover,
-.nav-right span{
- 	color:#d53302;
+.navbar ul li a:hover,
+.nav-right span,
+.navbar ul li.active > a{
+ 	background-color:#d53302;
+  color:#fff;
  	
  }
- .navbar-nav .nav-item.active > .nav-link{
-  color:#d53302;
- }
+
   .nav-right span{
     font-weight: 700;
   }
 
-.navbar{
+  #CollapsingNavbar{justify-content: space-between;}
+
+/*.navbar{
 	transition: all .2s ease-in-out;
+}*/
+
+/** search form **/
+
+#search-block-form .form-control{
+  border:1px solid #ddd;
+  border-radius:0;
+  color:#000;
+  width:100%;
 }
  .navbar.extend{
  	background:#5c5b34;
@@ -122,6 +153,19 @@ a:hover{
   	text-align: center;
   }
 
+
+
+
+/** site slogan**/
+
+.site-name-slogan{
+  width:13%;
+  letter-spacing: .6px;
+  font-weight:700;
+  color:#000;
+  font-size:14px;
+  display:block !important;
+}
   /** section services **/
 
   .services{text-align: center;

@@ -6,10 +6,11 @@ global-styling:
     js/global.js: {}
   css:
     component:
+      
       css/bootstrap.css: {}
-      css/custom.css: {}
       css/svg.css: {}
       css/carousel.css: {}
+      css/custom.css: {}
   dependencies:
     - core/jquery
     - core/drupal
