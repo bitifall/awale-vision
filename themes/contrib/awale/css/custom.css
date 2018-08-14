@@ -6,13 +6,13 @@ img{
 }
 .navbar-brand img{
 	max-width: 100%;
-  width:12.3rem;
+  width:4rem;
 display: block;
 }
 
 body{
 	background-color:#fff;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif !important;
 	/* overflow-x: hidden; */
 	padding-bottom: 0;
 }
@@ -22,6 +22,10 @@ body{
 
 
 h1,h2,h3,h4,h5,h6,p{letter-spacing: 1.5px;}
+
+h1{
+  font-size:2.2em !important;
+}
 
 a{letter-spacing: .6px;}
 
@@ -84,9 +88,9 @@ a:hover{
 
   #CollapsingNavbar{justify-content: space-between;}
 
-/*.navbar{
-	transition: all .2s ease-in-out;
-}*/
+.navbar{
+	padding:0 !important;
+}
 
 /** search form **/
 
@@ -108,14 +112,14 @@ a:hover{
 
  .btn-main{background-color:#d53302;
  	color:#fff;
-  	border:2px solid #d53302;
-  	border-radius: 20px;
-     transition-duration: .3s;
+  	border:2px solid #d53302 !important;
+  	border-radius: 20px !important;
+     transition-duration: .3s !important;
   }
 
   .btn-main:hover{
-  	background-color:#fff;
- 	color:#d53302;
+  	background-color:#fff !important;
+ 	color:#d53302 !important;
 
   }
 
@@ -915,6 +919,25 @@ color:#1d110b;
   border-bottom: 0;
 }
 
+#block-awale-servicehighlightheaderfront{
+  text-align:center;
+  width:100%;
+}
+
+#block-awale-servicehighlightheaderfront p{
+  margin:0 auto 2rem auto;
+}
+
+/** responsive media **/
+
+@media (min-width:40.5em){
+
+  #block-awale-servicehighlightheaderfront p{
+    width:64%;
+  
+  }
+
+}
 
 
 
